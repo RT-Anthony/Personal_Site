@@ -1,3 +1,7 @@
+"""
+URL API definitions for the blog portion of the site
+"""
+
 from django.urls import path
 from blog import views
 

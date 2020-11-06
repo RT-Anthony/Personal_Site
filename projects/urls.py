@@ -1,3 +1,7 @@
+"""
+API definition for the projects portion of the site
+"""
+
 from django.urls import path
 from . import views
 
