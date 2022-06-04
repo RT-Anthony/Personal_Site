@@ -25,7 +25,7 @@ SECRET_KEY = 'u8#ial!cc9^yhl7cgku_l2ep+o$g3ec)6*ptth17wbrvd+_(dm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://thawing-forest-30853.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thawing-forest-30853.herokuapp.com']
 
 
 # Application definition
