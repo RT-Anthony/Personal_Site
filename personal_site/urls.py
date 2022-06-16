@@ -19,7 +19,7 @@ from django.shortcuts import render
 
 
 def default(request):
-    return render(request, "base.html", {})
+    return render(request, "base.html", {"app": "home"})
 
 urlpatterns = [
     path("", default),

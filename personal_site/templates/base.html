@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home {% if "home" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/projects">Projects</a>
+          <a class="nav-link" href="/projects">Projects{% if "projects" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
+          <a class="nav-link" href="/blog">Blog{% if "blog" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
       </ul>
     </div>

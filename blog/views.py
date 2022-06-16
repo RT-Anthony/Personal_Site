@@ -7,6 +7,9 @@ from blog.models import Post, Comment
 from .forms import CommentForm
 
 # Create your views here.
+APP = "blog"
+
+
 def blog_index(request):
     """
     List all blog entries
@@ -19,6 +22,7 @@ def blog_index(request):
     """
     posts = Post.objects.all().order_by('-created_on')
     context = {
+        "app": APP,
         "posts": posts,
     }
     return render(request, "blog_index.html", context)
@@ -39,6 +43,7 @@ def blog_category(request, category):
         '-created_on'
     )
     context = {
+        "app": APP,
         "category": category,
         "posts": posts
     }
@@ -69,6 +74,7 @@ def blog_detail(request, pk):
 
     comments = Comment.objects.filter(post=post)
     context = {
+        "app": APP,
         "post": post,
         "comments": comments,
         "form": form,
