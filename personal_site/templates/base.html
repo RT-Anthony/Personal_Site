@@ -8,13 +8,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        {% if "home" == app %}
         <li class="nav-item active">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
           <a class="nav-link" href="/">Home {% if "home" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
+        {% if "home" == app %}
+        <li class="nav-item active">
+        {% else %}
         <li class="nav-item">
+        {% endif %}
           <a class="nav-link" href="/projects">Projects{% if "projects" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
+        {% if "home" == app %}
+        <li class="nav-item active">
+        {% else %}
         <li class="nav-item">
+        {% endif %}
           <a class="nav-link" href="/blog">Blog{% if "blog" == app %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
       </ul>
